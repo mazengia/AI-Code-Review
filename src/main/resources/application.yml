@@ -1,0 +1,82 @@
+spring:
+  application:
+    name: ai-code-reviewer
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/code_reviewer_db
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=200,expireAfterWrite=30m
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+  compression:
+    enabled: true
+
+# Claude API Configuration
+claude:
+  api:
+    key: ${CLAUDE_API_KEY}
+    base-url: https://api.anthropic.com
+    model: claude-opus-4-6                 # or claude-sonnet-4-6 for speed
+    max-tokens: 4096
+    timeout-seconds: 60
+    version: "2023-06-01"
+
+# NLP Pipeline Configuration
+nlp:
+  pipeline:
+    enabled: true
+    colab:
+      base-url: ${COLAB_NLP_URL:http://localhost:5000}  # ngrok URL from Colab
+      timeout-seconds: 30
+    complexity-threshold:
+      high: 20
+      very-high: 40
+
+# Rate Limiting
+rate-limit:
+  requests-per-minute: 10
+  requests-per-hour: 100
+
+# SpringDoc / Swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.enatbank.codereviewer: DEBUG
+    org.springframework.web: INFO
