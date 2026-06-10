@@ -1,4 +1,4 @@
-package com.enatbank.codereviewer.model;
+package com.maze.mazecodereviewerai.model;
 
 import jakarta.persistence.*;
 import lombok.*;

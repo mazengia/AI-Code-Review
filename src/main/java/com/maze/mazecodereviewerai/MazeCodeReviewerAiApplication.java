@@ -2,12 +2,16 @@ package com.maze.mazecodereviewerai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
+@EnableCaching
+@EnableAsync
 public class MazeCodeReviewerAiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MazeCodeReviewerAiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MazeCodeReviewerAiApplication.class, args);
+    }
 
 }

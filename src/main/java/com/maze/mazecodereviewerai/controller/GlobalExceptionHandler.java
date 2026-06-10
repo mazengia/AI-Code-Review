@@ -1,4 +1,4 @@
-package com.enatbank.codereviewer.controller;
+package com.maze.mazecodereviewerai.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

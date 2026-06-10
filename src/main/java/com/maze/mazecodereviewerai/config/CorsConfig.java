@@ -1,4 +1,4 @@
-package com.enatbank.codereviewer.config;
+package com.maze.mazecodereviewerai.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,9 @@
-package com.enatbank.codereviewer.service;
+package com.maze.mazecodereviewerai.service;
 
-import com.enatbank.codereviewer.dto.*;
-import com.enatbank.codereviewer.nlp.CodeMetricsCalculator;
+import com.maze.mazecodereviewerai.dto.ColabNlpRequest;
+import com.maze.mazecodereviewerai.dto.ColabNlpResponse;
+import com.maze.mazecodereviewerai.dto.NlpAnalysis;
+import com.maze.mazecodereviewerai.nlp.CodeMetricsCalculator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;

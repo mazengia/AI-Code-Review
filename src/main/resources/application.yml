@@ -4,8 +4,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/code_reviewer_db
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    username: ${DB_USERNAME:mtesfa}
+    password: ${DB_PASSWORD:P@ss1234}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -35,7 +35,7 @@ server:
 # Claude API Configuration
 claude:
   api:
-    key: ${CLAUDE_API_KEY}
+    key: ${CLAUDE_API_KEY:wwww-xxxx-yyyy-zzzz}  # Set this in environment variables for security
     base-url: https://api.anthropic.com
     model: claude-opus-4-6                 # or claude-sonnet-4-6 for speed
     max-tokens: 4096

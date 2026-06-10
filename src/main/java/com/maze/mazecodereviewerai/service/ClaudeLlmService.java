@@ -1,7 +1,10 @@
-package com.enatbank.codereviewer.service;
+package com.maze.mazecodereviewerai.service;
 
-import com.enatbank.codereviewer.dto.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.maze.mazecodereviewerai.dto.ClaudeMessage;
+import com.maze.mazecodereviewerai.dto.ClaudeRequest;
+import com.maze.mazecodereviewerai.dto.ClaudeResponse;
+import com.maze.mazecodereviewerai.dto.ClaudeReviewResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;

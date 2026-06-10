@@ -1,4 +1,4 @@
-package com.enatbank.codereviewer.nlp;
+package com.maze.mazecodereviewerai.nlp;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

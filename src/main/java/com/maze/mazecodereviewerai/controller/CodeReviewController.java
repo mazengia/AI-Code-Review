@@ -1,9 +1,9 @@
-package com.enatbank.codereviewer.controller;
+package com.maze.mazecodereviewerai.controller;
 
-import com.enatbank.codereviewer.dto.CodeReviewRequest;
-import com.enatbank.codereviewer.dto.CodeReviewResponse;
-import com.enatbank.codereviewer.model.CodeReviewAuditRepository;
-import com.enatbank.codereviewer.service.CodeReviewOrchestrator;
+import com.maze.mazecodereviewerai.dto.CodeReviewRequest;
+import com.maze.mazecodereviewerai.dto.CodeReviewResponse;
+import com. maze.mazecodereviewerai.model.CodeReviewAuditRepository;
+import com.  maze.mazecodereviewerai.service.CodeReviewOrchestrator;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-class ScoreBreakdown {
+public class ScoreBreakdown {
     private int readability;
     private int performance;
     private int security;

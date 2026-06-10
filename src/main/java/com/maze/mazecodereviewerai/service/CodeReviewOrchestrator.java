@@ -1,8 +1,11 @@
-package com.enatbank.codereviewer.service;
+package com.maze.mazecodereviewerai.service;
 
-import com.enatbank.codereviewer.dto.*;
-import com.enatbank.codereviewer.model.CodeReviewAudit;
-import com.enatbank.codereviewer.model.CodeReviewAuditRepository;
+import com.maze.mazecodereviewerai.dto.ClaudeReviewResult;
+import com.maze.mazecodereviewerai.dto.CodeReviewRequest;
+import com.maze.mazecodereviewerai.dto.CodeReviewResponse;
+import com.maze.mazecodereviewerai.dto.NlpAnalysis;
+import com.maze.mazecodereviewerai.model.CodeReviewAudit;
+import com.maze.mazecodereviewerai.model.CodeReviewAuditRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
